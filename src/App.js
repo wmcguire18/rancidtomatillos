@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import MoviesContainer from './MoviesContainer'
+import MoviesContainer from './MoviesContainer.js';
 import movieData from './MovieData.js';
 import './App.css';
-
-
 
 class App extends Component {
   constructor() {
@@ -11,15 +9,15 @@ class App extends Component {
     this.state = {movies: movieData.movies}
   }
 
-
   render() {
     return (
-      <div className="nav-bar">
-        <header className="nav-bar__header">
-          <h1 className="header__app-name"></h1>
-          <img className="header__logo" src=""/>
-        </header>
-      </div>
+      <main>
+        <nav className="nav-bar">
+          <h1 className="nav-bar__app-name">Name</h1>
+          <img className="nav-bar__logo" src=""/>
+        </nav>
+        <MoviesContainer movies={ this.state.movies } />
+      </main>
     );
   }
 }
