@@ -13,3 +13,5 @@ const MovieCard = ({id, title, src}) => {
     )
   }
 }
+
+export default MovieCard;
