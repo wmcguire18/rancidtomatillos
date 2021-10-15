@@ -1,0 +1,29 @@
+.card-holder__movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  width: 9vw;
+  margin: 49px 30px 29px 38.1px;
+}
+
+.movie-card__movie-poster {
+  height: 38.8vh;
+  width: 12.6vw;
+  border: 3px solid white;
+  box-shadow: 4px 30px 43px 11px;
+  cursor: pointer;
+}
+
+.movie-card__movie-poster:hover {
+  border: 3px solid red;
+}
+
+.movies-card__movie-title {
+  text-align: center;
+  margin: 1px;
+  font-family: 'Angkor';
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+}
