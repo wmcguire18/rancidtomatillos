@@ -3,9 +3,9 @@ import './MovieCard.css';
 
 const MovieCard = ({id, title, src}) => {
   return (
-    <div className="movies-container__movie-card">
-      <img tabindex="0" role="button" aria-label="Movie Poster" src={ src } />
-      <p className="movies-container__movie-title">
+    <div className="card-holder__movie-card">
+      <img className="movie-card__movie-poster" tabIndex="0" role="button" aria-label="Movie Poster" src={ src } alt="A movie poster" />
+      <p className="movies-card__movie-title">
         { title }
       </p>
     </div>
