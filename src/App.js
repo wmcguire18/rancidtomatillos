@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <main>
         <nav className="nav-bar">
-          <h1 className="nav-bar__app-name">Colorado Video (Co-Vid)</h1>
+          <h1 className="nav-bar__app-name">Colorado Video</h1>
           <img className="nav-bar__logo" src="" />
         </nav>
         <MoviesContainer movies={ this.state.movies } />
