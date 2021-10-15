@@ -1,6 +1,20 @@
-.ideas-container {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+.movies-container__featured-text {
+  display: flex;
+  margin: 117px 0px 0px 62px;
+  font-family: 'Angkor';
+  font-size: 42px;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.movies-container__featured {
+  display: flex;
+  flex-direction: column;
+  height: 353vh;
+  background-color: #887880;
+}
+
+.featured__card-holder {
+  display: flex;
+  flex-wrap: wrap;
 }
