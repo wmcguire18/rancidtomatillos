@@ -1,9 +1,7 @@
-// re-render movie container to only display single movies
-// remember to create home button that returns us to previous view
 import React from 'react';
 import './SingleMovie.css';
 
-const SingleMovie = ({title, average_rating, release_date, src}) => {
+const SingleMovie = ({title, average_rating, release_date, src, handleClick}) => {
   return (
     <div className="single-movie-info">
       <img
@@ -14,7 +12,7 @@ const SingleMovie = ({title, average_rating, release_date, src}) => {
       <h2 className="single-movie-info__title">{title}</h2>
       <p className="single-movie-view__rating">{average_rating}</p>
       <p className="single-movie-view__release-date">{release_date}</p>
-      <button className="single-movie-info__home-view-button"></button>
+      <button className="single-movie-info__home-view-button" onClick={handleClick}>Return to Home</button>
     </div>
   )
 }

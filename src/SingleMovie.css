@@ -1,0 +1,11 @@
+.single-movie-info__movie-poster {
+  height: 30vh;
+  width: 45vw;
+}
+
+.single-movie-info__home-view-button {
+  height: 10vh;
+  width: 15vw;
+  background-color: black;
+  color: white;
+}
