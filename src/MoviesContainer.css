@@ -1,17 +1,21 @@
 .movies-container__featured-text {
   display: flex;
   margin: 117px 0px 0px 62px;
-  font-family: 'Angkor';
-  font-size: 42px;
-  font-weight: bold;
-  color: lightblue;
+  font-family: 'Arial Black';
+  font-variant: small-caps;
+  font-stretch: expanded;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: darkcyan;
 }
 
 .movies-container__featured {
   display: flex;
   flex-direction: column;
   height: 353vh;
-  background-color: #887880;
+  background-color: #FFDEE9;
+  background-image: linen;
+
 }
 
 .featured__card-holder {
