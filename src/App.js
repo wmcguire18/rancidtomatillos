@@ -6,7 +6,22 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = {movies: movieData.movies}
+    this.state = {
+      movies: movieData.movies,
+      isShowingDetails: false,
+      selectedMovie: null
+    }
+  }
+
+  handleClick = (id) => {
+    const selectedMovie = this.state.movies.find(movie => {
+      return movie.id === id
+    })
+    console.log(selectedMovie)
+    this.setState({
+      selectedMovie: selectedMovie,
+      isShowingDetails: true
+    })
   }
 
   render() {
