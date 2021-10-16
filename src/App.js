@@ -14,15 +14,22 @@ class App extends Component {
   }
 
   handleClick = (id) => {
+    if(!this.state.isShowingDetails) {
     const selectedMovie = this.state.movies.find(movie => {
       return movie.id === id
     })
-    console.log(selectedMovie)
     this.setState({
       selectedMovie: selectedMovie,
       isShowingDetails: true
     })
+  } else {
+    this.setState({
+      selectedMovie: null,
+      isShowingDetails: false
+    })
   }
+  }
+
 
   render() {
     return (
@@ -31,7 +38,7 @@ class App extends Component {
           <h1 className="nav-bar__app-name">Mile High Movies!</h1>
           // <img className="nav-bar__logo" src="" />
         </nav>
-        <MoviesContainer movies={ this.state.movies } />
+        <MoviesContainer movies={ this.state.movies } handleClick={this.handleClick} isShowingDetails={this.state.isShowingDetails} selectedMovie={this.state.selectedMovie}/>
       </main>
     );
   }
