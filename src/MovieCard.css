@@ -10,20 +10,24 @@
 .movie-card__movie-poster {
   height: 38.8vh;
   width: 12.6vw;
-  border: 3px solid white;
-  box-shadow: 4px 30px 43px 11px;
+  border: 3px solid #2F2F2F;
+  box-shadow: -15px -15px 5px -3px rgba(0,0,0,0.75);
   cursor: pointer;
 }
 
 .movie-card__movie-poster:hover {
-  border: 3px solid red;
+  border: 7px solid #AF3D4E;
 }
 
 .movies-card__movie-title {
   text-align: center;
   margin: 1px;
-  font-family: 'Angkor';
+  font-family: 'Courier';
   font-size: 18px;
   font-weight: 900;
-  color: white;
+  color: #2F2F2F;
+}
+
+.movie-card__movie-title:hover {
+  color: #AF3D4E;
 }
