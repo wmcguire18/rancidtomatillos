@@ -1,8 +1,10 @@
 import React from 'react';
 import MovieCard from './MovieCard.js';
+import SingleMovie from './SingleMovie.js';
 import './MoviesContainer.css';
 
 const MoviesContainer = (movieData) => {
+
   const movieCards = movieData.movies.map(movie => {
     return (
       <MovieCard
