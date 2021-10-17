@@ -25,6 +25,7 @@ class App extends Component {
     try {
       loadMovies().then(data => this.setState({ movies: data.movies }))
       .catch(error => this.setState({ error: error.message }))
+
     } catch (error) {
       return (
         <main>
@@ -47,6 +48,7 @@ class App extends Component {
           })
         })
         .catch(error => this.setState({ error: error.message }))
+
       } catch (error) {
         return (
           <main>
@@ -57,6 +59,7 @@ class App extends Component {
           </main>
         )
       }
+
     } else {
       this.setState({
         selectedMovie: null,
@@ -77,6 +80,7 @@ class App extends Component {
           <MoviesContainer movies={ this.state.movies } handleClick={this.handleClick} isShowingDetails={this.state.isShowingDetails} selectedMovie={this.state.selectedMovie}/>
         </main>
       )
+
     } else {
       return (
         <main>
