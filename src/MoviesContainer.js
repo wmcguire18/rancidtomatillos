@@ -4,7 +4,6 @@ import SingleMovie from './SingleMovie.js';
 import './MoviesContainer.css';
 
 const MoviesContainer = (props) => {
-  console.log(props.selectedMovie)
   const movieCards = props.movies.map(movie => {
     return (
       <MovieCard
