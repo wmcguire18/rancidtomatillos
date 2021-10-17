@@ -22,19 +22,41 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    loadMovies().then(data => this.setState({ movies: data.movies }))
-    .catch(error => this.setState({ error: error.message }))
+    try {
+      loadMovies().then(data => this.setState({ movies: data.movies }))
+      .catch(error => this.setState({ error: error.message }))
+    } catch (error) {
+      return (
+        <main>
+          <nav className="nav-bar">
+            <h1 className="nav-bar__app-name">ERROR 500 (...oooo, sounds scary, and no one even knows what this one means. Just try refreshing the page, though, and that should fix it)</h1>
+            <img className="nav-bar__logo" src="" />
+          </nav>
+        </main>
+      )
+    }
   }
 
   handleClick = (id) => {
     if(!this.state.isShowingDetails) {
-      loadSingleMovie(id).then(data => {
-        this.setState({
-          selectedMovie: data.movie,
-          isShowingDetails: true
+      try {
+        loadSingleMovie(id).then(data => {
+          this.setState({
+            selectedMovie: data.movie,
+            isShowingDetails: true
+          })
         })
-      })
-      .catch(error => this.setState({ error: error.message }))
+        .catch(error => this.setState({ error: error.message }))
+      } catch (error) {
+        return (
+          <main>
+            <nav className="nav-bar">
+              <h1 className="nav-bar__app-name">ERROR 500 (...oooo, sounds scary, and no one even knows what this one means. Just try refreshing the page, though, and that should fix it)</h1>
+              <img className="nav-bar__logo" src="" />
+            </nav>
+          </main>
+        )
+      }
     } else {
       this.setState({
         selectedMovie: null,
