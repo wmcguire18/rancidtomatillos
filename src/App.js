@@ -1,46 +1,70 @@
 import React, { Component } from 'react';
 import MoviesContainer from './MoviesContainer.js';
-import movieData from './MovieData.js';
+import {
+  loadMovies,
+  loadSingleMovie
+  // loadSingleMovieVideo,
+  // loginUser,
+  // loadUserRatings,
+  // submitNewUserRating
+} from './apiCalls.js';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: movieData.movies,
+      movies: null,
       isShowingDetails: false,
-      selectedMovie: null
+      selectedMovie: null,
+      error: null
     }
+  }
+
+  componentDidMount = () => {
+    loadMovies().then(data => this.setState({ movies: data.movies }))
+    .catch(error => this.setState({ error: error.message }))
   }
 
   handleClick = (id) => {
     if(!this.state.isShowingDetails) {
-    const selectedMovie = this.state.movies.find(movie => {
-      return movie.id === id
-    })
-    this.setState({
-      selectedMovie: selectedMovie,
-      isShowingDetails: true
-    })
-  } else {
-    this.setState({
-      selectedMovie: null,
-      isShowingDetails: false
-    })
+      loadSingleMovie(id).then(data => {
+        this.setState({
+          selectedMovie: data.movie,
+          isShowingDetails: true
+        })
+      })
+      .catch(error => this.setState({ error: error.message }))
+    } else {
+      this.setState({
+        selectedMovie: null,
+        isShowingDetails: false
+      })
+    }
   }
-  }
-
 
   render() {
-    return (
-      <main>
-        <nav className="nav-bar">
-          <h1 className="nav-bar__app-name">Mile High Movies!</h1>
-          // <img className="nav-bar__logo" src="" />
-        </nav>
-        <MoviesContainer movies={ this.state.movies } handleClick={this.handleClick} isShowingDetails={this.state.isShowingDetails} selectedMovie={this.state.selectedMovie}/>
-      </main>
-    );
+    if (this.state.movies) {
+      return (
+        <main>
+          <nav className="nav-bar">
+            <h1 className="nav-bar__app-name">Mile High Movies!</h1>
+            <img className="nav-bar__logo" src="" />
+          </nav>
+          {this.state.error && <h2>{this.state.error}</h2>}
+          <MoviesContainer movies={ this.state.movies } handleClick={this.handleClick} isShowingDetails={this.state.isShowingDetails} selectedMovie={this.state.selectedMovie}/>
+        </main>
+      )
+    } else {
+      return (
+        <main>
+          <nav className="nav-bar">
+            <h1 className="nav-bar__app-name">...Loading...</h1>
+            <img className="nav-bar__logo" src="" />
+          </nav>
+        </main>
+      )
+    }
   }
 }
 
