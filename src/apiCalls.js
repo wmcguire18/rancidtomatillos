@@ -8,7 +8,6 @@ function loadMovies() {
 function loadSingleMovie(id) {
   return fetch(`${apiEndpoint}/movies/${id}`)
     .then(response => response.json())
-    .then(data => data)
 }
 
 function loadSingleMovieVideo(props) {
