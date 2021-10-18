@@ -22,6 +22,11 @@ main {
   z-index: 1;
 }
 
+.nav-bar__logo {
+  height: 5vh;
+  width: 7vw;
+}
+
 .nav-bar__app-name {
   width: 809px;
   margin: 16px 0px 0px 13px;
