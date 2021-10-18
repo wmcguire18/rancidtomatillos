@@ -19,6 +19,7 @@ main {
   overscroll-behavior-y: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  z-index: 1;
 }
 
 .nav-bar__app-name {

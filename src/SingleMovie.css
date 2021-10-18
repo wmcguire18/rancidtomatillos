@@ -1,6 +1,6 @@
 .single-movie-info__movie-poster {
-  height: 30vh;
-  width: 45vw;
+  height: 107vh;
+  width: 100vw;
 }
 
 .single-movie-info__home-view-button {
@@ -8,4 +8,65 @@
   width: 15vw;
   background-color: black;
   color: white;
+  display: flex;
+  position: absolute;
+  margin: -300px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-info__title {
+  display: flex;
+  position: absolute;
+  margin: -540px 0px 0px 58px;
+  z-index: 0;
+  font-size: 69px;
+}
+
+.single-movie-view__rating {
+  display: flex;
+  position: absolute;
+  margin: -500px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-view__release-date {
+  display: flex;
+  position: absolute;
+  margin: -470px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-view__genres {
+  display: flex;
+  position: absolute;
+  margin: -440px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-view__overview {
+  display: flex;
+  position: absolute;
+  margin: -400px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-view__tagline {
+  display: flex;
+  position: absolute;
+  margin: -370px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
+}
+
+.single-movie-view__budget {
+  display: flex;
+  position: absolute;
+  margin: -330px 0px 0px 58px;
+  z-index: 0;
+  font-size: 10px;
 }
