@@ -7,7 +7,7 @@ const SingleMovie = ({title, average_rating, release_date, src, handleClick, gen
       <img
         className="single-movie-info__movie-poster"
         src={src}
-        alt="Large backdrop image of a promotional movie poster"
+        alt="Movie poster backdrop"
       />
       <h2 className="single-movie-info__title">{title}</h2>
       <p className="single-movie-view__rating">{ average_rating }</p>

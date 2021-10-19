@@ -22,7 +22,8 @@
 .movies-card__movie-title {
   text-align: center;
   margin: 1px;
-  font-family: 'Courier';
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: 900;
   color: #2F2F2F;

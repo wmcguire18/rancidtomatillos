@@ -9,6 +9,7 @@ import {
   // submitNewUserRating
 } from './apiCalls.js';
 import './App.css';
+import mhm from './assets/mhm.jpeg'
 
 class App extends Component {
   constructor() {
@@ -31,7 +32,7 @@ class App extends Component {
         <main>
           <nav className="nav-bar">
             <h1 className="nav-bar__app-name">ERROR 500 (...oooo, sounds scary, and no one even knows what this one means. Just try refreshing the page, though, and that should fix it)</h1>
-            <img className="nav-bar__logo" src="" />
+            <img className="nav-bar__logo" src={mhm} />
           </nav>
         </main>
       )

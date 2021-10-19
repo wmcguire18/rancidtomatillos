@@ -12,7 +12,7 @@
   position: absolute;
   margin: -300px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-size: 25px;
 }
 
 .single-movie-info__title {
@@ -20,7 +20,9 @@
   position: absolute;
   margin: -540px 0px 0px 58px;
   z-index: 0;
-  font-size: 69px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 70px;
 }
 
 .single-movie-view__rating {
@@ -28,7 +30,9 @@
   position: absolute;
   margin: -500px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .single-movie-view__release-date {
@@ -36,7 +40,9 @@
   position: absolute;
   margin: -470px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .single-movie-view__genres {
@@ -44,7 +50,9 @@
   position: absolute;
   margin: -440px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .single-movie-view__overview {
@@ -52,7 +60,9 @@
   position: absolute;
   margin: -400px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .single-movie-view__tagline {
@@ -60,7 +70,9 @@
   position: absolute;
   margin: -370px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .single-movie-view__budget {
@@ -68,5 +80,7 @@
   position: absolute;
   margin: -330px 0px 0px 58px;
   z-index: 0;
-  font-size: 10px;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
