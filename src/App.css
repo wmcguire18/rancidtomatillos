@@ -30,7 +30,7 @@ main {
 .nav-bar__app-name {
   width: 809px;
   margin: 16px 0px 0px 13px;
-  font-family: 'Copperplate';
+  font-family: 'Courgette', cursive;
   text-decoration: underline solid;
   font-style: italic;
   font-weight: bolder;

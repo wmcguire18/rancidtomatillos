@@ -12,6 +12,7 @@ const MoviesContainer = (props) => {
         title={ movie.title }
         src={ movie.poster_path }
         handleClick={ props.handleClick }
+        className="movie-card"
       />
     )
   })

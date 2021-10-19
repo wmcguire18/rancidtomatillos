@@ -1,7 +1,7 @@
 const apiEndpoint = 'https://rancid-tomatillos.herokuapp.com/api/v2'
 
 const checkResponse = (response) => {
-  if (response.statusCode == 500) {
+  if (response.statusCode === 500) {
     throw new Error("Error 500 - Server Error. Please try refreshing page.")
   }
   return response.json()
