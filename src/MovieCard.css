@@ -4,7 +4,7 @@
   align-items: center;
   height: 40vh;
   width: 9vw;
-  margin: 49px 30px 29px 38.1px;
+  margin: 49px 30px 29px 73.1px;
 }
 
 .movie-card__movie-poster {
@@ -12,20 +12,22 @@
   width: 12.6vw;
   border: 3px solid #2F2F2F;
   box-shadow: -15px -15px 5px -3px rgba(0,0,0,0.75);
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .movie-card__movie-poster:hover {
-  border: 7px solid #AF3D4E;
+  border: 5px solid #AF3D4E;
 }
 
 .movies-card__movie-title {
   text-align: center;
+  width: 218px;
   margin: 1px;
   font-family: 'Courier';
   font-size: 18px;
   font-weight: 900;
-  color: #2F2F2F;
+  color: #FFF;
 }
 
 .movie-card__movie-title:hover {
