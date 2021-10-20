@@ -16,6 +16,11 @@
   z-index: 1;
 }
 
+.nav-bar__logo {
+  height: 5vh;
+  width: 7vw;
+}
+
 .nav-bar__app-name {
   width: 176px;
   margin: 9px 0px 0px 13px;

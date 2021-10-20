@@ -12,6 +12,7 @@ import {
   // submitNewUserRating
 } from './apiCalls.js';
 import './App.css';
+import mhm from './assets/mhm.jpeg'
 
 class App extends Component {
   constructor() {
