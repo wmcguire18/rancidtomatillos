@@ -20,11 +20,12 @@ class SingleMovie extends Component {
   render() {
     const movie = this.state.movieToRender;
     return (
-      <div className="single-movie-info">
+      <section className="single-movie-info">
         <img
           className="single-movie-info__movie-poster"
           src={movie.backdrop_path}
           alt="Large backdrop image of a promotional movie poster"
+          id="moviePoster"
         />
         <h2 className="single-movie-info__title">{movie.title}</h2>
         <p className="single-movie-view__rating">{movie.average_rating}</p>
@@ -36,7 +37,9 @@ class SingleMovie extends Component {
         <Link to="/">
           <button className="single-movie-info__home-view-button">Return to Home</button>
         </Link>
-      </div>
+        <div className="single-movie-info__info-background">
+        </div>
+      </section>
     )
   }
 }
