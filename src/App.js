@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
+import Loading from './Loading.js';
+import SingleMovie from './SingleMovie.js';
 import MoviesContainer from './MoviesContainer.js';
 import {
   loadMovies,
@@ -14,83 +17,54 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      movies: null,
-      isShowingDetails: false,
-      selectedMovie: null,
-      error: null
+      movies: [],
+      singleMovies: [],
+      error: null,
+      movieToRender: {}
     }
   }
 
   componentDidMount = () => {
-    try {
-      loadMovies().then(data => this.setState({ movies: data.movies }))
-      .catch(error => this.setState({ error: error.message }))
-
-    } catch (error) {
-      return (
-        <main>
-          <nav className="nav-bar">
-            <h1 className="nav-bar__app-name">ERROR 500 (...oooo, sounds scary, and no one even knows what this one means. Just try refreshing the page, though, and that should fix it)</h1>
-            <img className="nav-bar__logo" src="" />
-          </nav>
-        </main>
-      )
-    }
+    loadMovies().then(data => this.setState({ movies: data.movies }))
+    .then(() => this.getSingleMovieInfo(this.state.movies))
+    .catch(error => this.setState({ error: error.message }))
   }
 
-  handleClick = (id) => {
-    if(!this.state.isShowingDetails) {
-      try {
-        loadSingleMovie(id).then(data => {
-          this.setState({
-            selectedMovie: data.movie,
-            isShowingDetails: true
-          })
-        })
-        .catch(error => this.setState({ error: error.message }))
-
-      } catch (error) {
-        return (
-          <main>
-            <nav className="nav-bar">
-              <h1 className="nav-bar__app-name">ERROR 500 (...oooo, sounds scary, and no one even knows what this one means. Just try refreshing the page, though, and that should fix it)</h1>
-              <img className="nav-bar__logo" src="" />
-            </nav>
-          </main>
-        )
-      }
-
-    } else {
-      this.setState({
-        selectedMovie: null,
-        isShowingDetails: false
+  getSingleMovieInfo = (movies) => {
+    movies.map(movie => {
+      loadSingleMovie(movie.id).then(data => {
+        this.state.singleMovies.push(data.movie)
       })
-    }
+    })
+    .catch(error => this.setState({ error: error.message }))
   }
 
   render() {
-    if (this.state.movies) {
-      return (
-        <main>
-          <nav className="nav-bar">
-            <h1 className="nav-bar__app-name">Mile High Movies!</h1>
-            <img className="nav-bar__logo" src="" />
-          </nav>
-          {this.state.error && <h2>{this.state.error}</h2>}
-          <MoviesContainer movies={ this.state.movies } handleClick={this.handleClick} isShowingDetails={this.state.isShowingDetails} selectedMovie={this.state.selectedMovie}/>
-        </main>
-      )
-
-    } else {
-      return (
-        <main>
-          <nav className="nav-bar">
-            <h1 className="nav-bar__app-name">...Loading...</h1>
-            <img className="nav-bar__logo" src="" />
-          </nav>
-        </main>
-      )
-    }
+    return (
+      <main>
+        <nav className="nav-bar">
+          <h1 className="nav-bar__app-name">Mile-High Movies</h1>
+          <img className="nav-bar__logo" src="" />
+        </nav>
+        <Route
+          exact path="/"
+          render={() => {
+            return (
+              <MoviesContainer movies={ this.state.movies }/>
+            )
+          }}
+        />
+        <Route
+          exact path="/movie_info/:id"
+          render={({match}) => {
+            this.state.movieToRender = this.state.singleMovies.find(movie => {
+              return movie.id === parseInt(match.params.id)
+            })
+            return <SingleMovie {...this.state.movieToRender} />
+          }}
+        />
+      </main>
+    )
   }
 }
 
