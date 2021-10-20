@@ -1,24 +1,18 @@
-main {
-  overscroll-behavior-y: none;
+/* main {
+  display: flex;
+  overscroll-behavior-x: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.App {
-  text-align: center;
-}
+} */
 
 .nav-bar {
   position: fixed;
-  height: 10vh;
-  width: 99.6vw;
-  margin-top: 7px;
-  background-color: #FFBCB5;
-  border: 1px solid;
-  border-color: #E1B866;
-  overscroll-behavior-y: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 7.5vh;
+  margin-top: -2px;
+  width: 100vw;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: darkred;
   z-index: 1;
 }
 
@@ -28,20 +22,30 @@ main {
 }
 
 .nav-bar__app-name {
-  width: 809px;
-  margin: 16px 0px 0px 13px;
-  font-family: 'Courgette', cursive;
-  text-decoration: underline solid;
-  font-style: italic;
-  font-weight: bolder;
-  font-size: 40px;
+  width: 176px;
+  margin: 9px 0px 0px 13px;
+  font-family: 'Angkor';
+  font-size: 32px;
   font-weight: 800;
+  text-align: center;
   background-color: #FFBCB5;
-  border-radius: 168px;
-  color: cornflowerblue;
+  border: 3px solid;
+  border-color: darkred;
+  border-radius: 25px;
+  color: darkred;
   opacity: 98%;
 }
 
 .nav-bar__logo {
 
+}
+
+.nav-bkg {
+  position: fixed;
+  display: flex;
+  margin-top: -8px;
+  z-index: 1;
+  height: 9.4vh;
+  width: 100vw;
+  opacity: 95%;
 }

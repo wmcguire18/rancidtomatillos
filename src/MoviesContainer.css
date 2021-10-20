@@ -1,24 +1,21 @@
-.movies-container__featured-text {
-  display: flex;
-  margin: 117px 0px 0px 62px;
-  font-family: 'Francois One', sans-serif;
-  font-variant: small-caps;
-  font-stretch: expanded;
-  font-size: 2rem;
-  font-weight: bolder;
-  color: darkcyan;
-}
-
 .movies-container__featured {
   display: flex;
   flex-direction: column;
-  height: 353vh;
-  background-color: #FFDEE9;
-  background-image: linen;
-
+  height: 383vh;
+  position: absolute;
 }
 
 .featured__card-holder {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 75px;
+}
+
+.background-image {
+  position: fixed;
+  display: flex;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  filter: grayscale();
 }
