@@ -5,9 +5,9 @@
 
 .single-movie-info__info-background {
   background-color: white;
-  position: absolute;
+  position: fixed;
   opacity: 80%;
-  animation: fadeinbackground ease-in 4.5s;
+  animation: fadeinbackground ease-in 2.9s;
   height: 80vh;
   border-radius: 35px;
   width: 94vw;
@@ -26,59 +26,57 @@
   animation: fadein 3s;
   position: absolute;
   z-index: -2;
+  overflow-y: hidden;
 }
 
 @keyframes slideuptitle {
-  from { margin-top: 1110px}
-  to   { margin-top: 110px}
+  from { margin-top: 1134px}
+  to   { margin-top: 134px}
 }
 
 .single-movie-info__title {
   display: flex;
-  position: absolute;
-  margin: 110px 0px 0px 58px;
+  position: fixed;
+  margin: 134px 0px 0px 58px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
-  font-size: 120px;
-  animation: fadein 4s;
-  animation: slideuptitle 4.5s;
+  font-size: 80px;
+  animation: slideuptitle ease 2s;
   color: darkred;
 }
 
 @keyframes slideupgenres {
-  from { margin-top: 1237px}
-  to   { margin-top: 237px}
+  from { margin-top: 1220px}
+  to   { margin-top: 220px}
 }
 
 .single-movie-view__genres {
   display: flex;
-  position: absolute;
-  margin: 237px 0px 0px 69px;
+  position: fixed;
+  margin: 220px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 17px;
-  animation: fadein 4s;
-  animation: slideupgenres 4.5s;
+  animation: slideupgenres ease 2.2s;
   color: darkred;
 }
 
 @keyframes slideupreleasedate {
-  from { margin-top: 1257px}
-  to   { margin-top: 257px}
+  from { margin-top: 1240px}
+  to   { margin-top: 240px}
 }
 
 .single-movie-view__release-date {
   display: flex;
-  position: absolute;
-  margin: 257px 0px 0px 69px;
+  position: fixed;
+  margin: 240px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  animation: fadein 4s;
-  animation: slideupreleasedate 4.5s;
+  animation: slideupreleasedate ease 2.4s;
   color: darkred;
 }
 
@@ -89,14 +87,13 @@
 
 .single-movie-view__rating {
   display: flex;
-  position: absolute;
+  position: fixed;
   margin: 305px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
-  animation: fadein 4s;
-  animation: slideuprating 4.5s;
+  animation: slideuprating ease 2.6s;
   color: darkred;
 }
 
@@ -107,14 +104,13 @@
 
 .single-movie-view__tagline {
   display: flex;
-  position: absolute;
+  position: fixed;
   margin: 397px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
-  animation: fadein 4s;
-  animation: slideuptagline 4.5s;
+  animation: slideuptagline ease 2.8s;
   color: darkred;
 }
 
@@ -125,33 +121,31 @@
 
 .single-movie-view__overview {
   display: flex;
-  position: absolute;
+  position: fixed;
   margin: 447px 0px 0px 69px;
   width: 1293px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 21px;
-  animation: fadein 4s;
-  animation: slideupoverview 4.5s;
+  animation: slideupoverview ease 3s;
   color: darkred;
 }
 
 @keyframes slideupbudget {
-  from { margin-top: 160590px}
+  from { margin-top: 1590px}
   to   { margin-top: 590px}
 }
 
 .single-movie-view__budget {
   display: flex;
-  position: absolute;
+  position: fixed;
   margin: 590px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  animation: fadein 4s;
-  animation: slideupbudget 4.5s;
+  animation: slideupbudget ease 3.2s;
   color: darkred;
 }
 
@@ -166,10 +160,9 @@
   background-color: black;
   color: white;
   display: flex;
-  position: absolute;
+  position: fixed;
   margin: 623px 0px 0px 58px;
   z-index: 0;
   font-size: 25px;
-  animation: fadein 4s;
-  animation: slideupbutton 4.5s;
+  animation: slideupbutton ease 3.4s;
 }

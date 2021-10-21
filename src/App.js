@@ -11,7 +11,8 @@ import {
   // submitNewUserRating
 } from './apiCalls.js';
 import './App.css';
-import img1 from './nav-bkg2.png';
+import img1 from './red-nav.png';
+import img2 from './seats.png';
 
 class App extends Component {
   constructor() {
@@ -39,7 +40,10 @@ class App extends Component {
           exact path="/"
           render={() => {
             return (
-              <MoviesContainer movies={ this.state.movies }/>
+              <nav className="bottom-nav">
+                <MoviesContainer movies={ this.state.movies }/>
+                <img className="bottom-nav__image" src={img2} />
+              </nav>
             )
           }}
         />
