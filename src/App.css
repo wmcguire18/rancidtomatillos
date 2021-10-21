@@ -10,7 +10,7 @@
   height: 7.5vh;
   margin-top: -2px;
   width: 100vw;
-  background-color: #F1EEDA;
+  background-color: maroon;
   border-top: 2px solid;
   border-bottom: 2px solid;
   border-color: darkred;
@@ -29,16 +29,12 @@
   font-size: 32px;
   font-weight: 800;
   text-align: center;
-  background-color: #FFBCB5;
+  background-color: orange;
   border: 3px solid;
-  border-color: darkred;
+  border-color: blue;
   border-radius: 25px;
-  color: darkred;
+  color: blue;
   opacity: 98%;
-}
-
-.nav-bar__logo {
-
 }
 
 .nav-bkg {
@@ -56,5 +52,5 @@
   position: fixed;
   z-index: 2;
   width: 100vw;
-  margin-top: 583px;
+  margin-top: 625px;
 }

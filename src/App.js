@@ -34,7 +34,6 @@ class App extends Component {
         <img className="nav-bkg" src={img1} />
         <nav className="nav-bar">
           <h1 className="nav-bar__app-name">Mile-High Movies</h1>
-          <img className="nav-bar__logo" src="" />
         </nav>
         <Route
           exact path="/"
