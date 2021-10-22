@@ -1,5 +1,5 @@
 describe('Movies', () => {
-  it('Should show error if movies cannot be fetched', () => {
+  it('Should show error if movies do not render', () => {
     cy.intercept(
       {
         method: 'GET',
@@ -11,7 +11,7 @@ describe('Movies', () => {
     .get('h3, [class="display-error"]')
   })
 
-  it('Should show error if movie details cannot be fetched', () => {
+  it('Should show error if movie details do not render', () => {
     cy.intercept(
     {
       method: 'GET',
