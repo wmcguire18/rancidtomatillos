@@ -155,10 +155,12 @@
 }
 
 .single-movie-info__home-view-button {
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
   height: 10vh;
   width: 15vw;
-  background-color: black;
-  color: white;
+  background-color: orange;
+  color: blue;
   display: flex;
   position: fixed;
   margin: 623px 0px 0px 58px;
