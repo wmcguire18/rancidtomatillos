@@ -6,9 +6,6 @@ import {
   loadMovies,
   loadSingleMovie
   // loadSingleMovieVideo,
-  // loginUser,
-  // loadUserRatings,
-  // submitNewUserRating
 } from './apiCalls.js';
 import './App.css';
 import img1 from './red-nav.png';
@@ -40,6 +37,7 @@ class App extends Component {
           render={() => {
             return (
               <nav className="bottom-nav">
+                <MoviesContainer movies={ this.state.movies }/>
                 <MoviesContainer movies={ this.state.movies }/>
                 <img className="bottom-nav__image" src={img2} />
               </nav>

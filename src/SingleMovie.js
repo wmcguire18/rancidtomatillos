@@ -46,7 +46,7 @@ class SingleMovie extends Component {
           <button className="single-movie-info__home-view-button">Return to Home</button>
         </Link>
           <button className="single-movie-info__watched-movie-button">I've Seen It!</button>
-          <button className="single-movie-info__queued-movie-button">I Want To See It!</button>
+          <button className="single-movie-info__queued-movie-button" onClick={() => addToQueue(movie.id)}>I Want To See It!</button>
         <div className="single-movie-info__info-background">
         </div>
       </section>
