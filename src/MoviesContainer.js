@@ -21,8 +21,8 @@ const MoviesContainer = ({movies}) => {
   return (
     <section>
     <img className="background-image" src={img1}/>
-      <div className="movies-container__featured">
-        <article className="featured__card-holder">
+      <div className="movies-container__movie-lists">
+        <article className="movie-lists__card-holder">
           {movieCards}
         </article>
       </div>

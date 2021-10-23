@@ -1,11 +1,11 @@
-.movies-container__featured {
+.movies-container__movie-lists {
   display: flex;
   flex-direction: column;
   height: 383vh;
   position: absolute;
 }
 
-.featured__card-holder {
+.movie-lists__card-holder {
   display: flex;
   flex-wrap: wrap;
   margin-top: 75px;
