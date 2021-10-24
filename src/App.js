@@ -35,6 +35,7 @@ class App extends Component {
         <nav className="nav-bar">
           <div className="nav-bar__app-name"><span><img className="logo" src={img3}/></span></div>
           <img className="nav-bkg" src={img1} />
+          <p className="nav-bar__app-title">MILE-HIGH MOVIES</p>
           <img className="nav-bar__logo" src="" />
         </nav>
         <Route
