@@ -17,8 +17,8 @@ function loadSingleMovie(id) {
     .then(response => checkResponse(response))
 }
 
-function loadSingleMovieVideo(props) {
-  return fetch(`${apiEndpoint}/movies/${props.id}/videos`)
+function loadSingleMovieVideo(id) {
+  return fetch(`${apiEndpoint}/movies/${id}/videos`)
     .then(response => checkResponse(response))
 }
 
