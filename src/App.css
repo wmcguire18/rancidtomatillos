@@ -16,6 +16,16 @@
   z-index: 1;
 }
 
+.nav-bar__app-title {
+  position: fixed;
+  z-index: 6;
+  color: lightsalmon;
+  font-size: 12px;
+  font-family: 'Angkor';
+  font-weight: bold;
+  margin: 87px 0px 0px 27px;
+}
+
 .nav-bar__app-name {
   width: 141px;
   height: 88px;
