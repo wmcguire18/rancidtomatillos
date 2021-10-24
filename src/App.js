@@ -13,6 +13,7 @@ import {
 import './App.css';
 import img1 from './red-nav.png';
 import img2 from './seats.png';
+import img3 from './assets/mhm.jpeg';
 
 class App extends Component {
   constructor() {
@@ -31,9 +32,9 @@ class App extends Component {
   render() {
     return (
       <main>
-        <img className="nav-bkg" src={img1} />
         <nav className="nav-bar">
-          <h1 className="nav-bar__app-name">Mile-High Movies</h1>
+          <div className="nav-bar__app-name"><span><img className="logo" src={img3}/></span></div>
+          <img className="nav-bkg" src={img1} />
           <img className="nav-bar__logo" src="" />
         </nav>
         <Route
