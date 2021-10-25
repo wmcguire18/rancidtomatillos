@@ -7,7 +7,7 @@
   background-color: white;
   position: fixed;
   opacity: 80%;
-  animation: fadeinbackground ease-in 2.9s;
+  animation: fadeinbackground ease-in 2s;
   height: 80vh;
   border-radius: 35px;
   width: 94vw;
@@ -41,111 +41,112 @@
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
-  font-size: 80px;
-  animation: slideuptitle ease 2s;
-  color: darkred;
-}
-
-@keyframes slideupgenres {
-  from { margin-top: 1220px}
-  to   { margin-top: 220px}
-}
-
-.single-movie-view__genres {
-  display: flex;
-  position: fixed;
-  margin: 220px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
-  font-family: 'Roboto Slab', serif;
-  font-size: 17px;
-  animation: slideupgenres ease 2.2s;
-  color: darkred;
-}
-
-@keyframes slideupreleasedate {
-  from { margin-top: 1240px}
-  to   { margin-top: 240px}
-}
-
-.single-movie-view__release-date {
-  display: flex;
-  position: fixed;
-  margin: 240px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
-  font-family: 'Roboto Slab', serif;
-  font-size: 14px;
-  animation: slideupreleasedate ease 2.4s;
-  color: darkred;
-}
-
-@keyframes slideuprating {
-  from { margin-top: 1305px}
-  to   { margin-top: 305px}
-}
-
-.single-movie-view__rating {
-  display: flex;
-  position: fixed;
-  margin: 305px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  animation: slideuprating ease 2.6s;
+  font-size: 66px;
+  animation: slideuptitle ease 1.2s;
   color: darkred;
 }
 
 @keyframes slideuptagline {
-  from { margin-top: 1397px}
-  to   { margin-top: 397px}
+  from { margin-top: 1216px}
+  to   { margin-top: 216px}
 }
 
 .single-movie-view__tagline {
   display: flex;
   position: fixed;
-  margin: 397px 0px 0px 69px;
+  margin: 216px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
-  animation: slideuptagline ease 2.8s;
+  animation: slideuptagline ease 1.4s;
+  color: darkred;
+}
+
+@keyframes slideupgenres {
+  from { margin-top: 1241px}
+  to   { margin-top: 241px}
+}
+
+.single-movie-view__genres {
+  display: flex;
+  position: fixed;
+  margin: 241px 0px 0px 69px;
+  z-index: 0;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  animation: slideupgenres ease 1.6s;
+  color: darkred;
+}
+
+@keyframes slideupreleasedate {
+  from { margin-top: 1263px}
+  to   { margin-top: 263px}
+}
+
+.single-movie-view__release-date {
+  display: flex;
+  position: fixed;
+  margin: 263px 0px 0px 69px;
+  z-index: 0;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  animation: slideupreleasedate ease 1.8s;
+  color: darkred;
+}
+
+@keyframes slideuprating {
+  from { margin-top: 1295px}
+  to   { margin-top: 295px}
+}
+
+.single-movie-view__rating {
+  display: flex;
+  position: fixed;
+  margin: 295px 0px 0px 69px;
+  z-index: 0;
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 31px;
+  animation: slideuprating ease 1.9s;
   color: darkred;
 }
 
 @keyframes slideupoverview {
-  from { margin-top: 1447px}
-  to   { margin-top: 447px}
+  from { margin-top: 1351px}
+  to   { margin-top: 351px}
 }
 
 .single-movie-view__overview {
   display: flex;
   position: fixed;
-  margin: 447px 0px 0px 69px;
-  width: 1293px;
+  margin: 351px 0px 0px 69px;
+  width: 769px;
+  text-indent: 10px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 21px;
-  animation: slideupoverview ease 3s;
+  animation: slideupoverview ease 1.9s;
   color: darkred;
 }
 
 @keyframes slideupbudget {
-  from { margin-top: 1590px}
-  to   { margin-top: 590px}
+  from { margin-top: 1601px}
+  to   { margin-top: 601px}
 }
 
 .single-movie-view__budget {
   display: flex;
   position: fixed;
-  margin: 590px 0px 0px 69px;
+  margin: 601px 0px 0px 69px;
   z-index: 0;
   font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  animation: slideupbudget ease 3.2s;
+  animation: slideupbudget ease 2.4s;
   color: darkred;
 }
 
@@ -166,5 +167,20 @@
   margin: 623px 0px 0px 58px;
   z-index: 0;
   font-size: 25px;
-  animation: slideupbutton ease 3.4s;
+  animation: slideupbutton ease 2s;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 5;
+  margin: 223px 0px 0px 859px;
+}
+
+.iframe-container__video {
+  height: 140px;
+  width: 250px;
+  margin-bottom: 15px;
 }
