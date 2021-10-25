@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MovieCard.css';
+import './MovieCard.scss';
 
 const MovieCard = ({id, src, title}) => {
   return (
@@ -8,9 +8,6 @@ const MovieCard = ({id, src, title}) => {
       <Link to={`/movie_info/${id}`}>
         <img
           className="movie-card__movie-poster"
-          tabIndex="0"
-          role="button"
-          aria-label="Movie Poster"
           src={ src }
           alt="A movie poster"
         />

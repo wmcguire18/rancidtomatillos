@@ -1,0 +1,20 @@
+@mixin flex-fixed-width-zindex($width) {
+  display: flex;
+  position: fixed;
+  width: $width;
+  z-index: 2;
+}
+@mixin pos-fontfam-size-weight-color-zindex($size, $weight, $color, $zindex) {
+  position: fixed;
+  font-family: 'Angkor';
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  z-index: $zindex;
+}
+
+@mixin flex-pos-height($pos, $height) {
+  display: flex;
+  position: $pos;
+  height: $height;
+}

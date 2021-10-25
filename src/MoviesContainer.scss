@@ -1,8 +1,8 @@
+@import './mixins.scss';
+
 .movies-container__featured {
-  display: flex;
+  @include flex-pos-height(absolute, 383vh)
   flex-direction: column;
-  height: 383vh;
-  position: absolute;
 }
 
 .featured__card-holder {
@@ -12,10 +12,7 @@
 }
 
 .background-image {
-  position: fixed;
-  display: flex;
-  z-index: 0;
-  height: 100vh;
+  @include flex-pos-height(fixed, 100vh)
   width: 100vw;
-  filter: grayscale();
+  z-index: 0;
 }

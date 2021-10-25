@@ -10,7 +10,7 @@ import {
   // loadUserRatings,
   // submitNewUserRating
 } from './apiCalls.js';
-import './App.css';
+import './App.scss';
 import img1 from './red-nav.png';
 import img2 from './seats.png';
 import img3 from './assets/mhm.jpeg';

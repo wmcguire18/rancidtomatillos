@@ -1,7 +1,7 @@
 import React from 'react';
 import MovieCard from './MovieCard.js';
 import SingleMovie from './SingleMovie.js';
-import './MoviesContainer.css';
+import './MoviesContainer.scss';
 import img1 from './theater2.jpeg';
 
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { loadSingleMovie, loadSingleMovieVideo } from './apiCalls.js';
-import './SingleMovie.css';
+import { loadSingleMovie, loadSingleMovieVideo, addWatchedMovie } from './apiCalls.js';
+import './SingleMovie.scss';
 
 class SingleMovie extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class SingleMovie extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     loadSingleMovie(this.state.movieId)
       .then(data => this.setState({
         movieToRender: data.movie,
@@ -32,7 +32,7 @@ class SingleMovie extends Component {
     .then(this.getTrailer())
   }
 
-  getTrailer() {
+  getTrailer = () => {
     loadSingleMovieVideo(this.state.movieId)
       .then(data => this.setState({
         trailer: data.videos
@@ -79,7 +79,7 @@ class SingleMovie extends Component {
         <p className="single-movie-view__release-date">{movie.release_date}</p>
         <p className="single-movie-view__rating">Viewer Rating: {rating}</p>
         <p className="single-movie-view__tagline">{movie.tagline}</p>
-        <p className="single-movie-view__overview">Synopsis: {movie.overview}</p>
+        <p className="single-movie-view__overview">SYNOPSIS: {movie.overview}</p>
         <p className="single-movie-view__budget">Budget: {budget}</p>
         <Link to="/">
           <button className="single-movie-info__home-view-button">Return to Home</button>

@@ -46,11 +46,30 @@ function submitNewUserRating(props) {
   .then(response => checkResponse(response))
 }
 
+function addWatchedMovie(props) {
+  console.log(props.id)
+  return fetch(`http://localhost:3001/api/v1/watchedMovies/${props.id}`, {
+    method: 'POST',
+    body: JSON.stringify({
+      "poster_path": props.poster_path,
+      "backdrop_path": props.backdrop_path,
+      "title": props.title,
+      "average_rating": props.average_rating,
+      "release_date": props.release_date
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => checkResponse(response))
+}
+
 export {
   loadMovies,
   loadSingleMovie,
   loadSingleMovieVideo,
   loginUser,
   loadUserRatings,
-  submitNewUserRating
+  submitNewUserRating,
+  addWatchedMovie
 }

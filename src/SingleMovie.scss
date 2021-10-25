@@ -4,14 +4,14 @@
 }
 
 .single-movie-info__info-background {
-  background-color: white;
-  position: fixed;
-  opacity: 80%;
   animation: fadeinbackground ease-in 2s;
+  position: fixed;
   height: 80vh;
-  border-radius: 35px;
   width: 94vw;
   margin: 128px 0px 0px 40px;
+  background-color: white;
+  border-radius: 35px;
+  opacity: 80%;
   z-index: -1;
 }
 
@@ -21,12 +21,12 @@
 }
 
 .single-movie-info__movie-poster {
-  height: 107vh;
-  width: 100vw;
   animation: fadein 3s;
   position: absolute;
-  z-index: -2;
+  height: 107vh;
+  width: 100vw;
   overflow-y: hidden;
+  z-index: -2;
 }
 
 @keyframes slideuptitle {
@@ -35,15 +35,14 @@
 }
 
 .single-movie-info__title {
+  animation: slideuptitle ease 1.2s;
   display: flex;
   position: fixed;
   margin: 134px 0px 0px 58px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 66px;
-  animation: slideuptitle ease 1.2s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideuptagline {
@@ -52,15 +51,14 @@
 }
 
 .single-movie-view__tagline {
+  animation: slideuptagline ease 1.4s;
   display: flex;
   position: fixed;
   margin: 216px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 15px;
-  animation: slideuptagline ease 1.4s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideupgenres {
@@ -69,15 +67,14 @@
 }
 
 .single-movie-view__genres {
+  animation: slideupgenres ease 1.6s;
   display: flex;
   position: fixed;
   margin: 241px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
-  animation: slideupgenres ease 1.6s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideupreleasedate {
@@ -86,15 +83,14 @@
 }
 
 .single-movie-view__release-date {
+  animation: slideupreleasedate ease 1.8s;
   display: flex;
   position: fixed;
   margin: 263px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  animation: slideupreleasedate ease 1.8s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideuprating {
@@ -103,15 +99,14 @@
 }
 
 .single-movie-view__rating {
+  animation: slideuprating ease 1.9s;
   display: flex;
   position: fixed;
   margin: 295px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 31px;
-  animation: slideuprating ease 1.9s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideupoverview {
@@ -120,17 +115,16 @@
 }
 
 .single-movie-view__overview {
+  animation: slideupoverview ease 1.9s;
   display: flex;
   position: fixed;
-  margin: 351px 0px 0px 69px;
-  width: 769px;
   text-indent: 10px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
+  width: 769px;
+  margin: 351px 0px 0px 69px;
   font-family: 'Roboto Slab', serif;
-  font-size: 21px;
-  animation: slideupoverview ease 1.9s;
+  font-size: 20.2px;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideupbudget {
@@ -139,15 +133,14 @@
 }
 
 .single-movie-view__budget {
+  animation: slideupbudget ease 2.4s;
   display: flex;
   position: fixed;
   margin: 601px 0px 0px 69px;
-  z-index: 0;
-  font-family: 'Francois One', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  animation: slideupbudget ease 2.4s;
   color: darkred;
+  z-index: 0;
 }
 
 @keyframes slideupbutton {
@@ -156,16 +149,16 @@
 }
 
 .single-movie-info__home-view-button {
-  height: 10vh;
-  width: 15vw;
-  background-color: black;
-  color: white;
+  animation: slideupbutton ease 2s;
   display: flex;
   position: fixed;
+  height: 10vh;
+  width: 15vw;
   margin: 623px 0px 0px 58px;
-  z-index: 0;
   font-size: 25px;
-  animation: slideupbutton ease 2s;
+  background-color: black;
+  color: white;
+  z-index: 0;
 }
 
 .iframe-container {
@@ -173,8 +166,8 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   position: fixed;
-  z-index: 5;
   margin: 223px 0px 0px 859px;
+  z-index: 5;
 }
 
 .iframe-container__video {

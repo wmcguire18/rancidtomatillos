@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .logo {
   height: 89px;
   width: 141px;
@@ -7,8 +9,8 @@
 .nav-bar {
   position: fixed;
   height: 7.5vh;
-  margin-top: -2px;
   width: 100vw;
+  margin-top: -2px;
   background-color: #260D0D;
   border-top: 2px solid;
   border-bottom: 2px solid;
@@ -17,47 +19,31 @@
 }
 
 .nav-bar__app-title {
-  position: fixed;
-  z-index: 6;
-  color: lightsalmon;
-  font-size: 12px;
-  font-family: 'Angkor';
-  font-weight: bold;
+  @include pos-fontfam-size-weight-color-zindex(12px, bold, lightsalmon, 6)
   margin: 87px 0px 0px 27px;
 }
 
 .nav-bar__app-name {
-  width: 141px;
-  height: 88px;
-  margin: 11px 0px 0px 13px;
-  font-family: 'Angkor';
-  font-size: 32px;
-  font-weight: 800;
+  @include pos-fontfam-size-weight-color-zindex(32px, 800, darkred, 3)
   text-align: center;
-  position: fixed;
-  z-index: 3;
+  height: 88px;
+  width: 141px;
+  margin: 11px 0px 0px 13px;
   background-color: #FFBCB5;
   border: 3px solid;
   border-color: darkred;
   border-radius: 25px;
-  color: darkred;
   opacity: 98%;
 }
 
 .nav-bkg {
-  position: fixed;
-  display: flex;
-  margin-top: -52px;
-  z-index: 2;
+  @include flex-fixed-width-zindex(100vw);
   height: 24.4vh;
-  width: 100vw;
+  margin-top: -52px;
   opacity: 95%;
 }
 
 .bottom-nav__image {
-  display: flex;
-  position: fixed;
-  z-index: 2;
-  width: 100vw;
+  @include flex-fixed-width-zindex(100vw);
   bottom: -43px;
 }
