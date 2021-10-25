@@ -15,11 +15,11 @@ This application is a spoof of streaming services such as Netflix and Hulu, mixe
 
 Dashboard View:
 
-![landing page/dashboard](https://imgur.com/1vWTzNx)
+![landing page/dashboard](https://i.imgur.com/1vWTzNx.png)
 
 Single Movie Details View:
 
-![single movie details](https://imgur.com/3rGzB6S)
+![single movie details](https://i.imgur.com/3rGzB6S.png)
 
 
 1. The landing page of the app is a dashboard view (of sorts), from which the the user can:
