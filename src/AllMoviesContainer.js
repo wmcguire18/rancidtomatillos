@@ -1,12 +1,12 @@
 import React from 'react';
 import MovieCard from './MovieCard.js';
 import SingleMovie from './SingleMovie.js';
-import './MoviesContainer.css';
+import './AllMoviesContainer.css';
 import img1 from './theater2.jpeg';
 
 
 
-const MoviesContainer = ({movies}) => {
+const AllMoviesContainer = ({movies}) => {
   const movieCards = movies.map(movie => {
     return (
       <MovieCard
@@ -21,8 +21,8 @@ const MoviesContainer = ({movies}) => {
   return (
     <section>
     <img className="background-image" src={img1}/>
-      <div className="movies-container__featured">
-        <article className="featured__card-holder">
+      <div className="movies-container__movie-lists">
+        <article className="movie-lists__card-holder">
           {movieCards}
         </article>
       </div>
@@ -30,4 +30,4 @@ const MoviesContainer = ({movies}) => {
   )
 }
 
-export default MoviesContainer;
+export default AllMoviesContainer;

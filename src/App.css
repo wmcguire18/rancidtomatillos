@@ -1,46 +1,78 @@
-/* main {
-  display: flex;
-  overscroll-behavior-x: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-} */
+.logo {
+  height: 89px;
+  width: 141px;
+  border-radius: 22px;
+}
 
 .nav-bar {
   position: fixed;
   height: 7.5vh;
   margin-top: -2px;
   width: 100vw;
+  background-color: #260D0D;
   border-top: 2px solid;
   border-bottom: 2px solid;
   border-color: darkred;
   z-index: 1;
 }
 
+
+logo
+.nav-bar__app-title {
+  position: fixed;
+  z-index: 6;
+  color: lightsalmon;
+  font-size: 12px;
+  font-family: 'Angkor';
+  font-weight: bold;
+  margin: 87px 0px 0px 27px;
+}
+
+main
+
+.nav-bar__logo {
+  height: 5vh;
+  width: 7vw;
+}
+
+.queued-movie-view {
+  position: absolute;
+  z-index: 8;
+}
+
+
 .nav-bar__app-name {
-  width: 176px;
-  margin: 9px 0px 0px 13px;
+  width: 141px;
+  height: 88px;
+  margin: 11px 0px 0px 13px;
   font-family: 'Angkor';
   font-size: 32px;
   font-weight: 800;
   text-align: center;
+  position: fixed;
+  z-index: 3;
   background-color: #FFBCB5;
   border: 3px solid;
-  border-color: darkred;
+  border-color: blue;
   border-radius: 25px;
-  color: darkred;
+  color: blue;
   opacity: 98%;
-}
-
-.nav-bar__logo {
-
 }
 
 .nav-bkg {
   position: fixed;
   display: flex;
-  margin-top: -8px;
-  z-index: 1;
-  height: 9.4vh;
+  margin-top: -52px;
+  z-index: 2;
+  height: 24.4vh;
   width: 100vw;
   opacity: 95%;
+}
+
+.bottom-nav__image {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  bottom: -43px;
 }
