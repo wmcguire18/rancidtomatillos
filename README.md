@@ -15,11 +15,11 @@ This application is a spoof of streaming services such as Netflix and Hulu, mixe
 
 Dashboard View:
 
-![landing page/dashboard]()
+![landing page/dashboard](https://imgur.com/1vWTzNx)
 
 Single Movie Details View:
 
-![single movie details]()
+![single movie details](https://imgur.com/3rGzB6S)
 
 
 1. The landing page of the app is a dashboard view (of sorts), from which the the user can:
@@ -51,13 +51,13 @@ Single Movie Details View:
 
 ## Challenges
 
--
+- Team member coming down with Covid in final stretch
 
 ## Install/ Set Up Instructions
 
 1. Clone down this repository.
   ```
-  git clone
+  git clone https://github.com/wmcguire18/rancidtomatillos
   ```
 2. In your terminal, run:
   ```
@@ -69,4 +69,5 @@ Single Movie Details View:
 
 ## Future Features
 
--
+- Refactor for SCSS
+- Refactor file structure (all assets in assets directory, etc.)
