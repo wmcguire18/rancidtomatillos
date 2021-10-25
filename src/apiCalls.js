@@ -27,30 +27,9 @@ function loginUser(props) {
     .then(response => checkResponse(response))
 }
 
-function loadUserRatings(props) {
-  return fetch(`${apiEndpoint}/users/${props.id}/ratings`)
-    .then(response => checkResponse(response))
-}
-
-function submitNewUserRating(props) {
-  return fetch(`${apiEndpoint}/users/${props.id}/ratings`, {
-    method: 'POST',
-    body: JSON.stringify({
-      "movieID": props.id,
-      "rating": props.average_rating,
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(response => checkResponse(response))
-}
-
 export {
   loadMovies,
   loadSingleMovie,
   loadSingleMovieVideo,
   loginUser,
-  loadUserRatings,
-  submitNewUserRating
 }

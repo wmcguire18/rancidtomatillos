@@ -184,3 +184,33 @@
   width: 250px;
   margin-bottom: 15px;
 }
+
+.single-movie-info__watched-movie-button {
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  height: 10vh;
+  width: 15vw;
+  background-color: orange;
+  color: blue;
+  display: flex;
+  position: fixed;
+  margin: 623px 0px 0px 358px;
+  z-index: 0;
+  font-size: 25px;
+  animation: slideupbutton ease 3.4s;
+}
+
+.single-movie-info__queued-movie-button {
+  font-family: 'Francois One', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  height: 10vh;
+  width: 15vw;
+  background-color: orange;
+  color: blue;
+  display: flex;
+  position: fixed;
+  margin: 623px 0px 0px 658px;
+  z-index: 0;
+  font-size: 25px;
+  animation: slideupbutton ease 3.4s;
+}
