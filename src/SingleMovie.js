@@ -84,9 +84,14 @@ class SingleMovie extends Component {
         <Link to="/">
           <button className="single-movie-info__home-view-button">Return to Home</button>
         </Link>
+
+          <button className="single-movie-info__watched-movie-button">I've Seen It!</button>
+          <button className="single-movie-info__queued-movie-button" onClick={() => this.props.queueMovie(this.state.movieId.id)}>I Want To See It!</button>
+
         <div className="iframe-container">
           {trailerSrc}
         </div>
+         main
         <div className="single-movie-info__info-background">
         </div>
       </section>

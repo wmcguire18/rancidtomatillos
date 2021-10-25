@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import SingleMovie from './SingleMovie.js';
-import MoviesContainer from './MoviesContainer.js';
+import AllMoviesContainer from './AllMoviesContainer.js';
 import {
   loadMovies,
   loadSingleMovie
-  // loadSingleMovieVideo,
-  // loginUser,
-  // loadUserRatings,
-  // submitNewUserRating
 } from './apiCalls.js';
 import './App.css';
 import img1 from './red-nav.png';
@@ -20,8 +16,16 @@ class App extends Component {
     super();
     this.state = {
       movies: [],
+      queuedMovies: [],
       error: null
     }
+  }
+
+  queueMovie = (id) => {
+    const queuedMovie = this.state.movies.find(movie => {
+      return movie.id === id
+    })
+    this.setState({queuedMovies:[...this.state.queuedMovies, queuedMovie]})
   }
 
   componentDidMount = () => {
@@ -42,7 +46,12 @@ class App extends Component {
           render={() => {
             return (
               <nav className="bottom-nav">
-                <MoviesContainer movies={ this.state.movies }/>
+              {this.state.queuedMovies.length &&
+              <div className="movies-container__movie-lists">
+              <h1>Your Queue</h1>
+              <AllMoviesContainer movies={ this.state.queuedMovies }/>
+              </div> }
+                <AllMoviesContainer movies={ this.state.movies }/>
                 <img className="bottom-nav__image" src={img2} />
               </nav>
             )
@@ -54,7 +63,9 @@ class App extends Component {
             const movieToRender = this.state.movies.find(movie => {
               return movie.id === parseInt(match.params.id)
             })
-            return <SingleMovie id={ movieToRender }/>
+            return <SingleMovie id={ movieToRender }
+            queueMovie = {this.queueMovie}
+            />
           }}
         />
       </main>
